@@ -1,5 +1,5 @@
 # Laravel-Twilio
-Twilio API wrapper for Larevl 5.
+Twilio API wrapper for Laravel 5.
 
 ## Getting started
 1. Create an account through https://www.twilio.com/
