@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Twilio.
+ *
+ * (c) Alex Broom-Roden <b.r_alex@hotmail.co.uk>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace ABR\Twilio;
 
 use ABR\Twilio\Events\RequestSent;
@@ -47,14 +56,14 @@ class Twilio
 
     /**
      * The config.
-     * 
+     *
      * @var \ABR\Twilio\ConfigInterface
      */
     protected $config;
 
     /**
      * Create a new instance.
-     * 
+     *
      * @param string|null $accountSID
      * @param string|null $authToken
      *
@@ -80,7 +89,7 @@ class Twilio
 
     /**
      * Get the event dispatcher instance.
-     * 
+     *
      * @return \Illuminate\Contracts\Events\Dispatcher
      */
     public function getEventDispatcher()
@@ -190,9 +199,9 @@ class Twilio
 
     /**
      * Register a twilio listener.
-     * 
+     *
      * @param \Closure $callback
-     * 
+     *
      * @return void
      */
     public function listen(Closure $callback)
@@ -242,7 +251,7 @@ class Twilio
 
     /**
      * Get the config respository instance.
-     * 
+     *
      * @return \ABR\Twilio\ConfigInterface
      */
     public function getConfig()
@@ -252,7 +261,7 @@ class Twilio
 
     /**
      * Send a request.
-     * 
+     *
      * @return bool
      */
     public function send(array $data = [])
@@ -267,14 +276,14 @@ class Twilio
         }
 
         return $client->account->messages->create($phoneNumber, [
-           'from' => $this->config->getPhoneNumber(), 
+           'from' => $this->config->getPhoneNumber(),
            'body' => $message,
          ]);
     }
 
     /**
      * Return a REST client instance.
-     * 
+     *
      * @return \Twilio\Rest\Client
      */
     public function getClient()
