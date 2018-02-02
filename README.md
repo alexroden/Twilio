@@ -12,7 +12,7 @@ Twilio API wrapper for Laravel 5.
 
 require 'vendor/autoload.php';
 
-use ABR\Twilio\Twilio;
+use ABR\Twilio\Facades\Twilio;
 
 // Create a new instance of the Twilio class. 
 $twilio = new Twilio();
