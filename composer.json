@@ -1,0 +1,48 @@
+
+{
+    "name": "abr/twilio",
+    "description": "Twilio API wrapper written for Laravel",
+    "keywords": ["twilio", "api", "sms"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Broom-Roden",
+            "email": "b.r_alex@hotmail.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "~3.0",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.7.6",
+        "twilio/sdk": "^ 5.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "ABR\\Twilio\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ABR\\Tests\\Twilio\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ABR\\Twilio\\TwilioServiceProvider"
+            ],
+            "aliases": {
+                "Twilio": "ABR\\Twilio\\Facades\\Twilio"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

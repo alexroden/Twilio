@@ -1,0 +1,10 @@
+# Composer
+/vendor
+composer.lock
+
+# Test Coverage
+/build
+
+# Environment
+.env.*.php
+.env.php
