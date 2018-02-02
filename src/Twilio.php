@@ -50,7 +50,7 @@ class Twilio
      * 
      * @var \ABR\Twilio\ConfigInterface
      */
-    protected $config
+    protected $config;
 
     /**
      * Create a new instance.

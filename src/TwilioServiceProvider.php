@@ -52,7 +52,7 @@ class TwilioServiceProvider extends ServiceProvider
                 array_get($config, 'account_sid'),
                 array_get($config, 'auth_token')
             );
-        })
+        });
     }
 
     /**
