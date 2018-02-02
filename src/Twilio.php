@@ -253,7 +253,7 @@ class Twilio
     /**
      * Send a request.
      * 
-     * @return [type] [description]
+     * @return bool
      */
     public function send(array $data = [])
     {
