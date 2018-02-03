@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=5.6.5",
         "illuminate/contracts": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
         "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
     },
@@ -19,7 +19,7 @@
         "graham-campbell/testbench": "~3.0",
         "mockery/mockery": "^0.9.4",
         "phpunit/phpunit": "^4.7.6",
-        "twilio/sdk": "^ 5.12"
+        "twilio/sdk": "^5.12"
     },
     "autoload": {
         "psr-4": {
