@@ -55,7 +55,7 @@ class TwilioServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('twilio', function (Container $app) {
-            $confi = $app->config->get('twilio');
+            $config = $app->config->get('twilio');
 
             return new Twilio(
                 array_get($config, 'account_sid'),

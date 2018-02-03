@@ -14,7 +14,7 @@ class TwilioTest extends FunctionalTestCase
     /**
      * @test
      */
-    protected function it_can_change_account_sid()
+    public function it_can_change_account_sid()
     {
         $this->twilio->getConfig()->setAccountSID('newAccountSID');
 
@@ -24,7 +24,7 @@ class TwilioTest extends FunctionalTestCase
     /**
      * @test
      */
-    protected function it_can_change_auth_token()
+    public function it_can_change_auth_token()
     {
         $this->twilio->getConfig()->setAuthToken('newAuthToken');
 
@@ -34,7 +34,7 @@ class TwilioTest extends FunctionalTestCase
     /**
      * @test
      */
-    protected function it_can_change_phone_number()
+    public function it_can_change_phone_number()
     {
         $this->twilio->getConfig()->setPhoneNumber('newPhoneNumber');
 

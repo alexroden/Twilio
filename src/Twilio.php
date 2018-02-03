@@ -72,7 +72,7 @@ class Twilio
      */
     public function __construct(string $accountSID = null, string $authToken = null, string $phoneNumber = null)
     {
-        $this->accountSID = new Config($accountSID, $authToken, $phoneNumber);
+        $this->config = new Config($accountSID, $authToken, $phoneNumber);
     }
 
     /**

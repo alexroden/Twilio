@@ -26,7 +26,7 @@ class FunctionalTestCase extends PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->twilio = $twilio;
+        $this->twilio = new Twilio();
     }
 
     /**
