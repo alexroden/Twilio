@@ -1,5 +1,6 @@
 # Laravel-Twilio
 [![StyleCI](https://styleci.io/repos/120042743/shield)](https://styleci.io/repos/120042743)
+[![CircleCI](https://circleci.com/gh/broomroden89/Twilio.svg?style=svg)](https://circleci.com/gh/broomroden89/Twilio)
 
 Twilio API wrapper for Laravel 5.
 
