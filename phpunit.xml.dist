@@ -26,8 +26,8 @@
         </whitelist>
     </filter>
     <php>
-        <env name="ACCOUNT_SID" value="foo123"/>
-        <env name="AUTH_TOKEN" value="FooBar123"/>
-        <env name="PHONE_NUMBER" value="07000000000"/>
+        <env name="ACCOUNT_SID" value="accountSID"/>
+        <env name="AUTH_TOKEN" value="authToken"/>
+        <env name="PHONE_NUMBER" value="0712345678"/>
     </php>
 </phpunit>

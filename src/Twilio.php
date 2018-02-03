@@ -66,12 +66,13 @@ class Twilio
      *
      * @param string|null $accountSID
      * @param string|null $authToken
+     * @param string|null $phoneNumber
      *
      * @return void
      */
-    public function __construct(string $accountSID = null, string $authToken = null)
+    public function __construct(string $accountSID = null, string $authToken = null, string $phoneNumber = null)
     {
-        $this->accountSID = new Config($accountSID, $authToken);
+        $this->accountSID = new Config($accountSID, $authToken, $phoneNumber);
     }
 
     /**
@@ -79,12 +80,13 @@ class Twilio
      *
      * @param string $accountSID
      * @param string $authToken
+     * @param string $phoneNumber
      *
      * @return \ABR\Twilio\Twilio
      */
-    public static function make(string $accountSID = null, string $authToken = null)
+    public static function make(string $accountSID = null, string $authToken = null, string $phoneNumber = null)
     {
-        return new static($accountSID, $authToken);
+        return new static($accountSID, $authToken, $phoneNumber);
     }
 
     /**
