@@ -1,5 +1,6 @@
 # Laravel-Twilio
 [![StyleCI](https://styleci.io/repos/120042743/shield)](https://styleci.io/repos/120042743)
+
 Twilio API wrapper for Laravel 5.
 
 ## Getting started
